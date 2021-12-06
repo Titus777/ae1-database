@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/Titus777/ae1-database/issues"
   },
-  "homepage": "https://github.com/Titus777/ae1-database#readme"
+  "homepage": "https://github.com/Titus777/ae1-database#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "keywords": []
 }
