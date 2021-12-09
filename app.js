@@ -1,9 +1,9 @@
 const express = require('express');
 
-const app = exppress()
+const app = express()
 
 app.get('/', (req,res)=>{
     res.send("Crud Application");
 })
 
-app.listen(3000,()=>{console.log('Server is running on http://localhost:$(3000)')});
+app.listen(2020,()=>{console.log('Server is running on http://localhost:2020')});
