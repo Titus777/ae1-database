@@ -1,19 +1,9 @@
-require("dotenv").config();
-const express = require("express");
-const path = require("path");
-const mongoose = require("mongoose");
-const chalk = require("chalk");
-const bodyParser = require("body-parser");
-const expressSession = require("express-session");
+const express = require('express');
 
-const { PORT, MONGODB_URI } = process.env;
+const app = exppress()
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
-mongoose.connection.on("error", (err) => {
-    console.error(err);
-    console.log(
-        "MongoDB connection error. Please make sure MongoDB is running.",
-        chalk.red("✗")
-    );
-    process.exit();
-});
+app.get('/', (req,res)=>{
+    res.send("Crud Application");
+})
+
+app.listen(3000,()=>{console.log('Server is running on http://localhost:$(3000)')});
