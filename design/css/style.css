@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #04139b;
+}
+
+.text-dark{
+    color: black;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.text-light{
+    color: black;
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #000000, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header nav{
+    background-color: #090dcf;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#site-main{
+    margin-top: 6em;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+#site-main .container form{
+    margin: 10px;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+
+.table tr:hover{
+    background-color:#4a52c5 ;
+}
+
+.table tr:hover td > a{
+    box-shadow: none;
+}
+
+.table .thead-dark th{
+    color: rgb(0, 0, 0);
+    background-color: var(--dark) ;
+    border-color: #000000;
+}
+
+.thead-dark{
+    background-color: rgb(57, 44, 231);
+}
