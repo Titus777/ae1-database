@@ -6,14 +6,19 @@
 
 a {
     text-decoration-line: none;
+    color: black;
 }
 
-.container{
+body{
+    background: url("../background/anime.jpeg");
+}
+
+.heading{
     max-width: 1024px;
     margin: auto;
 }
 
-.nav-brand{
+.title{
     font-size: 4em;
     font-weight: bolder;
 }
@@ -21,6 +26,7 @@ a {
 .d-flex{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 450px;
 }
 
 .justify-between{
@@ -31,12 +37,12 @@ a {
     text-align: center;
 }
 
-.border-shadow{
-    border: 1px solid var(--border-btn);
-    box-shadow: 1px 3px 10px #04139b;
+.addlog{
+    box-shadow: 1px 3px 10px #000000;
+    background-color: white;
 }
 
-.text-dark{
+.text{
     color: black;
 }
 
@@ -44,20 +50,17 @@ a {
     display: inline-block;
 }
 
-.text-light{
-    color: black;
-}
-
 .text-gradient{
-    background: linear-gradient(to right, #000000, #000000);
+    background: linear-gradient(to right, #0f0bcf, #000000);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-color: white;
 }
 
+
 #header nav{
-    background-color: #090dcf;
-    padding: 1em 0;
+    padding: 2em 0;
     width: 100%;
 }
 
@@ -68,7 +71,7 @@ a {
 
 
 
-#site-main .container form{
+#site-main .heading form{
     margin: 10px;
 }
 
@@ -98,12 +101,8 @@ table{
     box-shadow: none;
 }
 
-.table .thead-dark th{
+.table .thead th{
     color: rgb(0, 0, 0);
-    background-color: var(--dark) ;
     border-color: #000000;
 }
 
-.thead-dark{
-    background-color: rgb(57, 44, 231);
-}
