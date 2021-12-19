@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>DATABASE</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header id="header">
-        <nav>
-            <div class="heading">
-                <div class="text-center">
-                    <a href="/" class="title">Anime Reviews</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-<!-- /Header -->
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
 
     <!-- front page -->
     <main id="site-main">
         <div class="heading">
             <div class="d-flex justify-between">
-                <a href="/add-user" class="addlog">
+                <a href="/add_anime" class="addlog">
                     <span class="text-gradient">Add Anime</span>
                 </a>
             </div>
@@ -44,29 +27,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>2939</td>
-                            <td>One Piece</td>
-                            <td>Adventure,action</td>
-                            <td>TV</td>
-                            <td>1004</td>
-                            <td>8.58</td>
-                            <td>504862</td>
-                            <td>
-                                <a href="edit" class="btn border-shadow update">
-                                    <span class="text-gradient"><i class="fas fa-pencil-alt">Edit</i></span>
-                                </a>
-                                <a href="deleteIcon" class="btn border-shadow delete">
-                                    <span class="text-gradient"><i class="fas fa-times">Delete</i></span>
-                                </a>
-                            </td>
-                        </tr>     
+                        <%- include('include/_show') %>
                     </tbody>
                 </table>
             </form>
         </div>
     </main>
     <!-- /front page -->
+
+
+    
 
 <!-- include footer -->
     <%- include('include/_footer') %>

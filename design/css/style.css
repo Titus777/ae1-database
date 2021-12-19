@@ -78,6 +78,15 @@ body{
 table{
     border-spacing: 0px;
     width: 100%;
+    max-width: 786px;
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(255, 255, 255, 0.2);
+    box-decoration-break: slice;
+    background:linear-gradient(to right, #c16bc4, #d306c2);
+    margin-left: 80px;
 }
 
 .table td, .table th{
@@ -106,3 +115,90 @@ table{
     border-color: #000000;
 }
 
+@media only screen and (max-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid var(--border);}
+
+    td{
+        border: none;
+        position: relative;
+    }
+
+}
+
+.form-title{
+    margin-bottom: 0
+}
+
+.form-title > h2{
+    padding: .5em 0;
+}
+
+.new_anime{
+    max-width: 786px;
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(255, 255, 255, 0.2);
+    box-decoration-break: slice;
+    background:linear-gradient(to right, #c16bc4, #d306c2);
+    
+}
+
+#update_anime .form-group,
+#add_anime .form-group{
+    margin-bottom: 0
+}
+
+#update_anime .form-group input[type="text"],
+#add_anime .form-group input[type="text"]{
+    width: 100%;
+    padding: .10em 1em;
+    margin: .11em 0;
+    font-size: 1.5em;
+
+}
+
+#update_anime .form-group,
+#add_anime .form-group{
+    margin-bottom: 0
+}
+
+
+#update_anime .form-group .btn,
+#add_anime .form-group .btn{
+    padding: 0.5em 0.5em;
+    background-color:#fdfdfd; 
+    font-size: 1.3em;
+    margin: 0.3em 0;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #fafafa;
+    outline-width: 0;
+    font-weight: 100
+}
+
+#update_anime .form-group .btn:hover,
+#add_anime .form-group .btn:hover{
+    background-color: var(--dark);
+    color: var(--border);
+}
+
+
+#navbar{
+   padding-right: 20px;
+   max-width: 1024px;
+   margin: auto;
+   color: white;
+}

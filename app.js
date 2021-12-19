@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const bodyparser = require("body-parser");
 const path =require('path'); 
+const { ppid } = require("process");
 
 const app = express()
 
@@ -24,8 +25,7 @@ app.use('/background',express.static(path.resolve(__dirname,"design/background")
 app.use('/javascript',express.static(path.resolve(__dirname,"design/javascript")))
 
 
-app.get('/',(req,res)=>{
-    res.render('home');
-})
+//loud routes
+app.use('/', require('./server/routes/router'))
 
 app.listen(PORT,()=>{console.log('Server is running on http://localhost:PORT')});
