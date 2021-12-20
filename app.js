@@ -5,12 +5,16 @@ const bodyparser = require("body-parser");
 const path =require('path'); 
 const { ppid } = require("process");
 
+const connectDB = require('./server/database/connection')
+
 const app = express()
 
 const { PORT, MONGODB_URI } = process.env;
 
 // log requests
 app.use(morgan('tiny'));
+
+connectDB();
 
 //parse request to body-parser
 app.use(bodyparser.urlencoded({extended: true}))
