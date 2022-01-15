@@ -3,18 +3,17 @@ const express = require('express');
 const morgan = require('morgan');
 const bodyparser = require("body-parser");
 const path =require('path'); 
-const { ppid } = require("process");
+const process = require("process");
+const mongoose = require("mongoose");
 
-const connectDB = require('./server/database/connection')
 
 const app = express()
 
 const { PORT, MONGODB_URI } = process.env;
 
+
 // log requests
 app.use(morgan('tiny'));
-
-connectDB();
 
 //parse request to body-parser
 app.use(bodyparser.urlencoded({extended: true}))
@@ -29,7 +28,35 @@ app.use('/background',express.static(path.resolve(__dirname,"design/background")
 app.use('/javascript',express.static(path.resolve(__dirname,"design/javascript")))
 
 
-//loud routes
-app.use('/', require('./server/routes/router'))
+app.get("/", (req, res) => {
+  res.render("home")
+});
+
+app.get("/add-anime", (req, res) => {
+  res.render('add-anime', { errors: {} })
+});
+
+app.get("/update-anime", (req, res) => {
+  res.render('update-anime', { errors: {} })
+});
+
+
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+
+mongoose.connection.on("error", (err) => {
+
+    console.error(err);
+
+    console.log(
+
+        "MongoDB connection error. Please make sure MongoDB is running.",
+
+        chalk.red("✗")
+
+    );
+
+    process.exit();
+
+});
 
 app.listen(PORT,()=>{console.log('Server is running on http://localhost:PORT')});
