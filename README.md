@@ -30,6 +30,17 @@ System Overview
 
 The user will be able to interact with website because I used EJS and CSS to make the website, for example I’ve placed buttons, forms, pages, and visual elements (shape, colour, space, texture) to interact with the user. Furthermore, I’ve added a background so that website is visually pleasing and not boring. Within my code I was able to connect the page by adding a HREF tag. So, when the user presses the add anime button it takes them to the add anime page, where a form will appear. I was able to position these classes by using CSS, having previous experience in this area was helpful and it was easy to do. 
 
+Below is the titles I have chosen.
+Anime ID- show the ID of the anime
+Name-the title of the anime
+Genre-the user can see what fits their taste such as adventure, action etc
+Type- if it’s a movie, tv show or special episodes
+Episodes-how many episodes each anime has 
+Rating-the rating of each anime and users can see what the most popular anime is
+Members-how many people watch each anime
+Actions-this helps the users to edit and delete the animes if there wrong information
+
+
 Key Design Decisions
 
 
@@ -54,6 +65,6 @@ You can see that I have changed the episode from 148 to 146
 
 Conclusion 
 
-To sum up this project, I have learned a lot about this module and have gained a new skill. I have previously learned about node js and express but mongodb was new to me. MongoDB is used to store data in json documents, it helped me work with data much easier especially for this project. While doing this project I had a hard time doing javascript but doing this project helped me improve it, it is still lacking in some areas, but I am improving little by little which I am happy with. I had many resources to help me such as the teachers lecture and notes and Youtube. 
+To sum up this project, I have learned a lot about this module and have gained a new skill. I have previously learned about node js and express but mongodb was new to me. MongoDB is used to store data in json documents, it helped me work with data much easier especially for this project. While doing this project I had a hard time doing javascript but doing this project helped me improve it, it is still lacking in some areas, but I am improving little by little which I am happy with. I had many resources to help me such as the teachers lecture and notes and Youtube. I was able to make the whole project working, there were times I couldn’t make anything work but I pulled through and everything turned out the way I wanted it to. Furthermore there a lot of stuff I wanted to add but couldn’t such as having a ascending and descending so that the user can see whats the most popular anime and what has the most episodes ect.
 
 
