@@ -57,7 +57,7 @@ As you can see I have added a background so that it gives an anime vibe/feeling 
 Adding the anime
  ![image](https://user-images.githubusercontent.com/72074715/150546606-d452ebd2-7049-45da-b7f2-77cd6c302abc.png)
 
-See that the data has been added and read the list 
+See that the data has been added and read the list on the website
  ![image](https://user-images.githubusercontent.com/72074715/150546645-aa47b663-66b1-4ada-858d-f23e73832367.png)
 
 Can see that it has been updated on mongo aswell
