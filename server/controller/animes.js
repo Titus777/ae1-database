@@ -25,7 +25,7 @@ exports.delete = async (req, res) => {
 exports.update = async (req, res) => {
   const id = req.params.id;
   try {
-    const anime = await anime.updateOne({
+    const Anime = await anime.updateOne({
       Anime_ID: req.body.animeid,
       Name: req.body.Name,
       Genre: req.body.Genre,
@@ -45,9 +45,10 @@ exports.update = async (req, res) => {
 exports.edit = async (req, res) => {
     const id = req.params.id;
     try{
-        const anime = await anime.findById(id);
-        res.render('update-anime', { anime: anime, id: id});
+        const Anime = await anime.findById(id);
+        res.render('update-anime', { anime: Anime, id: id});
     } catch (e) {
+        console.error(e)
         res.status(404).send({
             message: `could not find anime ${id}`
         });
