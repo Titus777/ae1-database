@@ -4,11 +4,11 @@
 - Open the folder using Visual Studio Code.
 - Open new terminal.
 - Run 
-```
+
 npm install
 
 after change .env.example to .env 
-```
+
 - After that run 
 
 npm start
