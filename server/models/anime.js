@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const animeSchema = new Schema(
     {
-      ID: String,
+      Anime_ID: String,
       Name: String,
       Genre: String,
       Type: String,
@@ -11,8 +11,8 @@ const animeSchema = new Schema(
       Rating: String,
       Members: String,
     },
-    { timestamps: true }
+    { timestamps: false }
 );
 
 
-module.exports = mongoose.model("anime", animeSchema);
+module.exports = mongoose.model("animes", animeSchema);

@@ -1,10 +1,9 @@
 <!--form handling -->
-<form method="POST" id="add_anime">
+<form method="POST" action ="/add-anime" id="add_anime">
     <div class="new_anime">
         <div class="form-group">
             <label for="ID" class="text"> Anime ID</label>
-            <input type="hidden" name="ID" value="">
-            <input type="text" name="name" value="">
+            <input type="text" name="animeid" value="">
         </div>
         <div class="form-group">
             <label for="Name" class="text">Anime Name</label>
@@ -32,7 +31,7 @@
         </div>
 
         <div class="form-group">
-            <button type="submit" class="btn text update">Save</button>
+            <input type="submit" value="submit"> 
         </div>
 
     </div>

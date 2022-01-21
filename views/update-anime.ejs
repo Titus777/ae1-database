@@ -1,6 +1,6 @@
 <!-- include header -->
 <%- include('include/_header') %>
-<!-- /include header -->
+    <!-- /include header -->
 
     <!-- front page -->
     <main id="site-main">
@@ -16,49 +16,49 @@
             </div>
 
             <!--form handling -->
-<form method="POST" id="update_anime">
-    <div class="new_anime">
-        <div class="form-group">
-            <label for="ID" class="text">Anime ID</label>
-            <input type="text" name="ID" value="">
-        </div>
-        <div class="form-group">
-            <label for="Name" class="text">Anime Name</label>
-            <input type="text" name="Name" value="">
-        </div>
-        <div class="form-group">
-            <label for="Genre" class="text">Genre</label>
-            <input type="text" name="Genre" value="">
-        </div>
-        <div class="form-group">
-            <label for="Type" class="text">Type</label>
-            <input type="text" name="Type" value="">
-        </div>
-        <div class="form-group">
-            <label for="Episodes" class="text">Episodes</label>
-            <input type="text" name="Episodes" value="">
-        </div>
-        <div class="form-group">
-            <label for="Rating" class="text">Rating</label>
-            <input type="text" name="Rating" value="">
-        </div>
-        <div class="form-group">
-            <label for="Members" class="text">Members</label>
-            <input type="text" name="Members" value="">
-        </div>
+            <form method="POST" action="/update-anime/:id" id="update_anime">
+                <div class="new_anime">
+                    <div class="form-group">
+                        <label for="ID" class="text">Anime ID</label>
+                        <input type="text" name="animeid" value="<%= anime.Anime_ID %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="Name" class="text">Anime Name</label>
+                        <input type="text" name="Name" value=" <%= anime.Name %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="Genre" class="text">Genre</label>
+                        <input type="text" name="Genre" value="<%= anime.Genre %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="Type" class="text">Type</label>
+                        <input type="text" name="Type" value="<%= anime.Type %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="Episodes" class="text">Episodes</label>
+                        <input type="text" name="Episodes" value="<%= anime.Episodes %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="Rating" class="text">Rating</label>
+                        <input type="text" name="Rating" value="<%= anime.Rating %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="Members" class="text">Members</label>
+                        <input type="text" name="Members" value=" <%= anime.Members %>">
+                    </div>
 
-        <div class="form-group">
-            <button type="submit" class="btn text update">Save</button>
-        </div>
+                    <div class="form-group">
+                        <input type="submit" value="submit">
+                    </div>
 
-    </div>
-</form>
+                </div>
+            </form>
 
-            
+
         </div>
     </main>
-<!-- /front page -->
+    <!-- /front page -->
 
-<!-- include footer -->
-<%- include('include/_footer') %>
-<!-- /include footer -->
+    <!-- include footer -->
+    <%- include('include/_footer') %>
+        <!-- /include footer -->

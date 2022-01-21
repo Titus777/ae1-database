@@ -1,11 +1,15 @@
 require("dotenv").config();
 const express = require('express');
+const expressSession = require("express-session")
 const morgan = require('morgan');
 const bodyparser = require("body-parser");
 const path =require('path'); 
 const process = require("process");
 const mongoose = require("mongoose");
 
+const anime=require('./server/models/anime')
+
+const animecontroller=require('./server/controller/animes')
 
 const app = express()
 
@@ -17,7 +21,8 @@ app.use(morgan('tiny'));
 
 //parse request to body-parser
 app.use(bodyparser.urlencoded({extended: true}))
-
+app.use(bodyparser.json());
+app.use(expressSession({secret: "foo barr", cookie: {expires: new Date(253403000000)}}));
 //set view engine
 app.set("view engine","ejs")
 //app.set("views",path.resolve(__dirname,"views/ejs"))
@@ -28,17 +33,19 @@ app.use('/background',express.static(path.resolve(__dirname,"design/background")
 app.use('/javascript',express.static(path.resolve(__dirname,"design/javascript")))
 
 
-app.get("/", (req, res) => {
-  res.render("home")
-});
+app.get("/home",animecontroller.list);
+app.get("/home/delete/:id",animecontroller.delete);
+
+app.get("/update-anime/:id",animecontroller.edit);
+app.post("/update-anime/:id",animecontroller.update);
 
 app.get("/add-anime", (req, res) => {
-  res.render('add-anime', { errors: {} })
+  res.render("add-anime");
 });
+app.post("/add-anime", animecontroller.create);
 
-app.get("/update-anime", (req, res) => {
-  res.render('update-anime', { errors: {} })
-});
+
+
 
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
@@ -59,4 +66,4 @@ mongoose.connection.on("error", (err) => {
 
 });
 
-app.listen(PORT,()=>{console.log('Server is running on http://localhost:PORT')});
+app.listen(PORT,()=>{console.log(`Server is running on http://localhost:${PORT}`)});
