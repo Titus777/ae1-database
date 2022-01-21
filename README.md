@@ -29,6 +29,8 @@ The information the user can look at are the following: Anime ID, Anime Name, Ge
 System Overview
 
 The user will be able to interact with website because I used EJS and CSS to make the website, for example I’ve placed buttons, forms, pages, and visual elements (shape, colour, space, texture) to interact with the user. Furthermore, I’ve added a background so that website is visually pleasing and not boring. Within my code I was able to connect the page by adding a HREF tag. So, when the user presses the add anime button it takes them to the add anime page, where a form will appear. I was able to position these classes by using CSS, having previous experience in this area was helpful and it was easy to do. 
+
+Key Design Decisions
  ![image](https://user-images.githubusercontent.com/72074715/150546580-f4e917bb-6369-4f93-981f-4ffe0960a68f.png)
 
 Adding the anime
@@ -43,7 +45,7 @@ Can see that it has been updated on mongo aswell
 You can see that I have changed the episode from 148 to 146
 
 
-Key Design Decisions
+
 
 
 
