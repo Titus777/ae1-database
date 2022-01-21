@@ -47,6 +47,5 @@ Key Design Decisions
 Conclusion 
 
 To sum up this project, I have learned a lot about this module and have gained a new skill. I have previously learned about node js and express but mongodb was new to me. MongoDB is used to store data in json documents, it helped me work with data much easier especially for this project. While doing this project I had a hard time doing javascript but doing this project helped me improve it, it is still lacking in some areas, but I am improving little by little which I am happy with. I had many resources to help me such as the teachers lecture and notes and Youtube. 
-![image](https://user-images.githubusercontent.com/72074715/150546270-632ae133-1b73-44a3-8b1b-a16fecf592b9.png)
 
 
