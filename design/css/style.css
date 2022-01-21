@@ -71,6 +71,7 @@ body{
 
 
 
+
 #site-main .heading form{
     margin: 10px;
 }
@@ -85,8 +86,9 @@ table{
     border: none !important;
     box-shadow: 0 6px 12px 0 rgba(255, 255, 255, 0.2);
     box-decoration-break: slice;
-    background:linear-gradient(to right, #c16bc4, #d306c2);
+    background:linear-gradient(to right, #7b6bc4, #d306c2);
     margin-left: 80px;
+    display: inline-block;
 }
 
 .table td, .table th{
