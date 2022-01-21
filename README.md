@@ -43,6 +43,11 @@ Actions-this helps the users to edit and delete the animes if there wrong inform
 
 Key Design Decisions
 
+The website can do what a crud application supposed to do which is too create, read, update and delete. I have done all those steps. 
+As you can see I have added a background so that it gives an anime vibe/feeling when entering the website.
+
+
+
 
  ![image](https://user-images.githubusercontent.com/72074715/150546580-f4e917bb-6369-4f93-981f-4ffe0960a68f.png)
 
