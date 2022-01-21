@@ -30,15 +30,15 @@ System Overview
 
 The user will be able to interact with website because I used EJS and CSS to make the website, for example I’ve placed buttons, forms, pages, and visual elements (shape, colour, space, texture) to interact with the user. Furthermore, I’ve added a background so that website is visually pleasing and not boring. Within my code I was able to connect the page by adding a HREF tag. So, when the user presses the add anime button it takes them to the add anime page, where a form will appear. I was able to position these classes by using CSS, having previous experience in this area was helpful and it was easy to do. 
 
-Below is the titles I have chosen.
-Anime ID- show the ID of the anime
-Name-the title of the anime
-Genre-the user can see what fits their taste such as adventure, action etc
-Type- if it’s a movie, tv show or special episodes
-Episodes-how many episodes each anime has 
-Rating-the rating of each anime and users can see what the most popular anime is
-Members-how many people watch each anime
-Actions-this helps the users to edit and delete the animes if there wrong information
+Below is the titles I have chosen,
+Anime ID- show the ID of the anime,
+Name-the title of the anime,
+Genre-the user can see what fits their taste such as adventure, action etc,
+Type- if it’s a movie, tv show or special episodes,
+Episodes-how many episodes each anime has,
+Rating-the rating of each anime and users can see what the most popular anime is,
+Members-how many people watch each anime,
+Actions-this helps the users to edit and delete the animes if there wrong information.
 
 
 Key Design Decisions
