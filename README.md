@@ -64,8 +64,9 @@ You can see that I have changed the episode from 148 to 146
 
 
 
+Security and Scalability 
 
-
+I didn’t put a login system because I didn’t have enough time but if I did I would have. Any user can edit the data and delete it they want because I had said before there aren’t many websites like I’ve made, and it is helpful to the anime fans and new anime fans as well. I think that security isn’t too secure because users can put inappropriate things and ruin the website but If I had more time, I would edit the backend and made sure no one can do those type of things.
 
 
 Conclusion 
