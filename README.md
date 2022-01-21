@@ -12,5 +12,41 @@ after change .env.example to .env
 - After that run 
 
 npm start
-```
+
+
+Github link- https://github.com/Titus777/ae1-database/tree/master
+Heruko link- https://dashboard.heroku.com/apps/immense-beach-65836
+
+Introduction
+
+The main objective of this assessment is for an application to be able to create, read, update, and delete (CRUD) operations on one or more datasets. I’ve decided to base my application on anime recommendations, this is because I’ve been watching anime since at a young age, and it holds a special place in my heart till this today. One of the main reasons I have made this website is because not many search engines from a decade ago had any website of this type of information. Another main reason is that I found it hard to find an anime that were to my taste. As a result, I had to browse through many animes to see what suited me best. I made personal notes on each anime I’ve came across on websites, the type of information noted down included the ratings, genre, episodes etc.
+
+ Therefore, I concluded to make a website that contained all these factors to make it easier for amateur anime fans to have an enjoyable start to anime as it is getting popular as years go by, not having this information could make new anime fans loose interest if the genre is not to their liking, and therefore anime would gradually loose the audience. 
+
+The information the user can look at are the following: Anime ID, Anime Name, Genre, Type, Rating and Members. It will be shown in a form of a table. The users will be able to add animes on the website so that other users can find this website helpful, the users can update the animes for example if the animes has more episodes then you can edit it and will be updated on the website.
+
+
+System Overview
+
+The user will be able to interact with website because I used EJS and CSS to make the website, for example I’ve placed buttons, forms, pages, and visual elements (shape, colour, space, texture) to interact with the user. Furthermore, I’ve added a background so that website is visually pleasing and not boring. Within my code I was able to connect the page by adding a HREF tag. So, when the user presses the add anime button it takes them to the add anime page, where a form will appear. I was able to position these classes by using CSS, having previous experience in this area was helpful and it was easy to do. 
+ 
+Adding the anime
+ 
+See that the data has been added and read the list 
+ 
+Can see that it has been updated on mongo aswell
+ 
+You can see that I have changed the episode from 148 to 146
+
+
+Key Design Decisions
+
+
+
+
+Conclusion 
+
+To sum up this project, I have learned a lot about this module and have gained a new skill. I have previously learned about node js and express but mongodb was new to me. MongoDB is used to store data in json documents, it helped me work with data much easier especially for this project. While doing this project I had a hard time doing javascript but doing this project helped me improve it, it is still lacking in some areas, but I am improving little by little which I am happy with. I had many resources to help me such as the teachers lecture and notes and Youtube. 
+![image](https://user-images.githubusercontent.com/72074715/150546270-632ae133-1b73-44a3-8b1b-a16fecf592b9.png)
+
 
