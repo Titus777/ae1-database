@@ -1,5 +1,21 @@
 const anime = require("../models/anime")
 
+exports.searchBar = async(req,res) =>{
+  try{
+
+    const animeSearch = await anime.find({$text:{$search:req.body.animeName}})
+
+    if(animeSearch.length > 0){
+      res.render("home",{animes:animeSearch})
+    }else{
+      res.status(404).send({message: "Did not find any anime with that name"})
+    }
+  }catch(e){
+    console.log(e)
+    res.status(404).redirect('/')
+  }
+}
+
 exports.list = async (req, res) => {
   try {
     const animes = await anime.find({});
