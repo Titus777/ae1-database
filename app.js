@@ -33,11 +33,14 @@ app.use('/background',express.static(path.resolve(__dirname,"design/background")
 app.use('/javascript',express.static(path.resolve(__dirname,"design/javascript")))
 
 
-app.get("/home",animecontroller.list);
+app.get("/",animecontroller.list);
 app.get("/home/delete/:id",animecontroller.delete);
 
 app.get("/update-anime/:id",animecontroller.edit);
 app.post("/update-anime/:id",animecontroller.update);
+
+
+app.post("/search/ByName",animecontroller.searchBar)
 
 app.get("/add-anime", (req, res) => {
   res.render("add-anime");
