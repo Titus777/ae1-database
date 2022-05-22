@@ -30,7 +30,7 @@ exports.delete = async (req, res) => {
   console.log(req.params.id);
   try {
     await anime.findByIdAndRemove(id);
-    res.redirect("/home/?message=anime has been deleted");
+    res.redirect("/?message=anime has been deleted");
   } catch (e) {
     res.status(404).send({
       message: `could not delete record ${id}.`,
@@ -40,17 +40,18 @@ exports.delete = async (req, res) => {
 
 exports.update = async (req, res) => {
   const id = req.params.id;
+  console.log(id)
   try {
-    const Anime = await anime.updateOne({
+    const Anime = await anime.updateOne({_id: id},{$set:{
       Anime_ID: req.body.animeid,
       Name: req.body.Name,
       Genre: req.body.Genre,
       Type: req.body.Type,
       Episodes: req.body.Episodes,
       Rating: req.body.Rating,
-      Members: req.body.Members
+      Members: req.body.Members}
     });
-    res.redirect('/home/?message=anime has been updated');
+    res.redirect('/?message=anime has been updated');
   } catch (e) {
     res.status(404).send({
       message: `couldn't find anime ${id}.`,
@@ -59,16 +60,17 @@ exports.update = async (req, res) => {
 };
 
 exports.edit = async (req, res) => {
-    const id = req.params.id;
-    try{
-        const Anime = await anime.findById(id);
-        res.render('update-anime', { anime: Anime, id: id});
-    } catch (e) {
-        console.error(e)
-        res.status(404).send({
-            message: `could not find anime ${id}`
-        });
-    }
+  const id = req.params.id;
+
+  try{
+      const Anime = await anime.findById(id);
+      res.render('update-anime', { anime: Anime, id: id});
+  } catch (e) {
+      console.error(e)
+      res.status(404).send({
+          message: `could not find anime ${id}`
+      });
+  }
 };
 
 exports.create = async (req, res) => {
@@ -85,7 +87,7 @@ exports.create = async (req, res) => {
     });
 
     console.log("i a in the try");
-    res.redirect("/home?message=New anime has been added");
+    res.redirect("/?message=New anime has been added");
     console.log("anime added")
   } catch (e) {
     if (e.errors) {
